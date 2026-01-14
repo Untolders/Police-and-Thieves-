@@ -20,7 +20,10 @@ Constraints:
 arr[i] = 'P' or 'T'
 
 ```cpp
- int n = arr.size();
+class Solution {
+  public:
+    int catchThieves(vector<char> &arr, int k) {
+     int n = arr.size();
         int m = k+1;
         int count = 0;
         deque<int>police;
@@ -57,4 +60,6 @@ arr[i] = 'P' or 'T'
             }
         }
         return count;
+    }
+};
 ```
